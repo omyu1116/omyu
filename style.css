@@ -1,3 +1,7 @@
+body{
+  background-color: #223a70;
+  color: white;
+}
 * {
     margin: 0;
     padding: 0; 
@@ -12,7 +16,8 @@
      display: flex;
      height:60px;
      align-items: center;
-     background-color: gray;
+     background-color: black;
+     color: white;
    }
    .header__flex nav {
      margin-left: auto;
@@ -23,4 +28,5 @@
    .header__flex ul li {
      margin-left: 20px;
    }
+   
    
