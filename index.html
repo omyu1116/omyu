@@ -19,19 +19,40 @@
         </nav>
       </div>
       <br>
-        <!-- Element to contain animated typing -->
-  <span id="element"></span>
-
-  <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-      typeSpeed: 50,
-    });
-  </script>
+      <script>
+        $(function(){
+            $(".element").typed({
+    　　　　 //文字 ,で区切りで1フレーズ。
+            strings: ["こんにちは,ただの学生のomyuです,サイトを見てくれてありがとう!"],
+            //タイピングスピード
+            typeSpeed: 0,
+            //スタートまでの時間
+            startDelay: 0,
+            //文字が戻る時間
+            backSpeed: 0,
+            //1フレーズが表示され、次に文字がもどりにかかるまでの時間
+            backDelay: 500,
+            //ループ
+            loop: true,
+            //ループのカウント
+            loopCount: false,
+            //カーソルのありなし
+            showCursor: true,
+            //カーソルにする文字
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+            });
+        });
+    </script>
 </body>
       <h1>できることをできるだけ楽しくする</h1>
       <p>上のことをモットーに生きています。しかし現状ただの学生なので自分の行きたい学校へと進めるようにひたすら勉強......</p>
