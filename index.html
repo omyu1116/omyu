@@ -19,6 +19,20 @@
         </nav>
       </div>
       <br>
+        <!-- Element to contain animated typing -->
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
       <h1>できることをできるだけ楽しくする</h1>
       <p>上のことをモットーに生きています。しかし現状ただの学生なので自分の行きたい学校へと進めるようにひたすら勉強......</p>
       <br>
